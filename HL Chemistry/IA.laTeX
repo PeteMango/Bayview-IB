@@ -1,0 +1,150 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[version=4]{mhchem}
+
+\title{CHEM IA DRAFT}
+\author{Peter Wang}
+\date{November 2021}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=25mm,
+ right=25mm,
+ top=20mm,
+}
+
+\begin{document}
+\maketitle
+\section{Introduction}
+Ever since I immigrated to Canada as a child, it has become my family’s tradition to visit a new ski resort every winter. However, I observed over the years that when I brought my phone along to take pictures of the landscape, it would immediately shutdown as soon as I took it out of my coat pocket. When I tried to restart the device, it would indicate that the device had no battery even though I had fully charged it beforehand. I later learned in high school that a battery is simply a device that stores electrical energy in the form of chemical energy and converts the stored energy into electrical energy when the battery is being used through a chemical reaction. During the thermodynamics unit, we learned th
+
+\section{Investigation}
+\subsection{Reaction Under Study}
+The reaction studied in this investigation is the dissolution of Ammonium Nitrate within water, which produces Ammonium cations and Nitrate anions. The reaction is endothermic and is often used within commercial cold packs. 
+\begin{equation}
+\ce{NH4NO3 (s) ->[H2O (l)] NH4+ (aq) + NO3- (aq)}
+\end{equation}
+
+\subsection{Research Question}
+\textit{The effect of absolute temperature on the Gibbs Free Energy of the dissolution of Ammonium Nitrate in Water at 298K, 303K, 308K, 313K and 318K.}
+
+\subsection{Background Information}
+The Gibbs Free Energy of a reaction ($\Delta G$) is a single state function that combines the enthalpy and entropy of reaction and is used to indicate the amount of available energy that can be used to do work. The Gibbs Free Energy value is measured in Joules and can be calculated by taking the difference between the enthalpy ($\Delta H$) of the reaction and the product of the entropy ($\Delta S$) and absolute temperature ($T$). The Gibbs Free Energy of a reaction is used to predict the spontaneity of the reaction.  If the $\Delta G > 0$, then the reaction is non-spontaneous, and the reverse is true where if $\Delta G < 0$, then the reaction is spontaneous. When the $\Delta G = 0$, the system is in equilibrium and there will be equal concentrations of reactants and products. As indicated by the equation \ref{eq:5}, the Gibbs Free Energy of a chemical reaction varies based on the temperature in which it occurs, hence a reaction could be spontaneous at a temperature value but non-spontaneous at another. 
+\begin{equation}
+\Delta G = \Delta H - T \Delta S \label{eq:5}
+\end{equation}
+Furthermore, both the enthalpy and entropy of a chemical reaction are also temperature dependent values. The enthalpy of a reaction is temperature dependent as it is given as the difference of enthalpy of formation between the specific enthalpy of the product and reactants. 
+\begin{equation}
+\ce{\Delta H = \sum{\Delta H_{products}} - \sum{\Delta H_{reactants}}}
+\end{equation}
+As temperature is increased, molecules have more excited vibrational and rotational quantum numbers. This in turn increases the rotational and vibrational quantum numbers, and hence less energy is required to break the existing bonds. Moreover, according to Kirchhoff's Law of thermodynamics, the temperature dependence of the enthalpy of reaction's dependence on temperature is given by formula \ref{eq:8} below. As the specific heat capacity is usually not constant, it is given as a function over temperature. Therefore, the enthalpy of reaction at a specific absolute temperature value can be given as the sum between the initial enthalpy value ($\ce{H_{T_i}}$) and the integral of the specific heat capacity function ($\ce{c_p}$) between $\ce{T_i}$ and $\ce{T_f}$
+\begin{equation}
+\ce{H_{T_f} = H_{T_i} + \int{_{T_{i}}^{T_{f}} c_p dT}} \label{eq:8}
+\end{equation}
+If the specific heat capacity is temperature independent over a specific temperature range, the equation above can be further simplified. Literature values suggests that the specific heat capacity of water remains measurably constant in liquid state ($\ce{273.15K, 373.15K}$), sufficiently covering the temperature range investigated in this paper.
+\begin{equation}
+\ce{H_{T_f} = H_{T_i} + c_p(T_f - T_i)} \label{eq:1}
+\end{equation}
+Likewise, the entropy of a reaction is also dependent on the temperature at which the reaction occurs. Molecules at higher absolute temperature values possess greater kinetic energy compared to molecules at lower absolute temperature values. Consequently, they have greater disorder and hence a higher absolute entropy value. The temperature dependence of entropy change at constant pressure is given by the following equation. If the specific molar heat capacity of the reaction is known, then the entropy of reaction at constant pressure for any given temperature is the product between the number of moles of reactants ($\ce{n}$), the molar specific heat capacity ($\ce{c_p}$) and the nature logarithm of the final temperature over the initial temperature.
+\begin{equation}
+\ce{\Delta S = nC_p \ln{\frac{T_2}{T_1}}|_p} \label{eq:2}
+\end{equation}
+The Gibbs Free Energy at a temperature value can be theoretically calculated by utilizing equations \ref{eq:1} and \ref{eq:2}. However, a much simpler method for calculating the theoretical Gibbs Free Energy value at constant pressure would be to implement the Gibbs-Helmholtz Equation. The Gibbs-Helmholtz equation provides the direct relationship between the enthalpy of reaction and the Gibbs Free Energy of reaction, as it does not involve the entropy of reaction variable. The equation can be derived from equation \ref{eq:5} as shown in the derivation below.
+\begin{equation}
+\begin{split}
+\ce{
+\Delta G &= \Delta H - T \Delta S \\ 
+\frac{\Delta G}{T} &= \frac{\Delta H}{T} - \Delta S \\ 
+\frac{\partial (\Delta G/T)}{\partial T}|_p &= \frac{1}{T} \frac{\partial H}{\partial T}|_p - \frac{H}{T^2} - \frac{\partial S}{\partial T}|_p \\ 
+&= \frac{c_p}{T} - \frac{H}{T^2} - \frac{c_p}{T} \\ 
+&= -\frac{H}{T^2}
+}
+\end{split}
+\end{equation}
+The Gibbs-Helmholtz equation in its raw form is given by equation \ref{eq:3} below, where the partial derivative of the Gibbs Free Energy on temperature is given as the negative quotient of the enthalpy of reaction divided by the square of the absolute temperature.
+\begin{equation}
+\ce{(\frac{\partial(\Delta G/T)}{\partial T})|_p = - \frac{\Delta H}{T^2}} \label{eq:3}
+\end{equation}
+If the $\Delta G$ value at a given temperature ($\ce{T_i}$), such as under SATP (standard ambient temperature and pressure) conditions given in the IBO data-booklet is known, the $\Delta G$ value at any other temperature ($\ce{T_f}$) can be calculated by integrating the equation \ref{eq:3}. The integration process is shown below in equation \ref{eq:4}. However, the $\Delta H$ value is not constant, but as a function over temperature as the enthalply is also temperature dependent as mentioned previously.
+\begin{equation}
+\begin{split}
+\ce{\int_{\Delta G(T_i)/T_i}^{\Delta G(T_f)/T_f}{(\frac{\partial (\Delta G/T)}{\partial T})_p dT}} &= \frac{\Delta G(T_f)}{T_f} + \frac{\Delta G(T_i)}{T_i} \label{eq:4} \\
+&= -\int_{T_i}^{T_f} \frac{\Delta H}{T^2} dT 
+\end{split}
+\end{equation}
+
+\subsection{Experimental Methodology}
+This paper investigates the effect of absolute temperature on the Gibbs Free Energy of the reaction by measuring the enthalpy of reaction at various absolute temperature values. The enthalpy of reaction will be measured through the use of a coffee cup calorimeter, which measures the heat flow in a chemical reaction. The calorimeter is simply an insulated container, with the lid to act as the system for the chemical reaction to occur. When the chemical reaction occurs, the heat of the reaction is absorbed by or extracted from the water and the temperature of the water will change. The change in temperature is measured by a thermometer, which will be used to calculate the enthalpy change of the reaction using the heat flow equation as given by equation \ref{eq:6} below.
+\begin{equation}
+\ce{q = mc_p \Delta T} \label{eq:6} 
+\end{equation}
+As the enthalpy of the reaction is negative to the heat absorbed/gained by the water, the reaction enthalpy can be given as the negative of the heat transfer to the water as shown in equation \ref{eq:7}
+\begin{equation}
+\ce{\Delta H = -q} \label{eq:7}
+\end{equation}
+Due to the fact that a coffee cup does not have perfect built in insulation, therefore, for an endothermic reaction, the system will gain heat from the surroundings and alter the final temperature value. To account for the heat loss to the environment, after the reaction has concluded, the Pasco-Thermometer will continue to measure the rate of temperature gain from environment. The rate can then be used to graphically extrapolate the corrected final temperature of the reaction, which would be the temperature value reached assuming that the coffee cup calorimeter was a closed system. 
+
+\section{Variables}
+\subsection{Independent Variable}
+The independent variable of this investigation is the \textbf{\textit{absolute temperature }}($\ce{K}$). In equation \ref{eq:5}, the three variables that are used to calculate the Gibbs Free Energy of a reaction are the enthalpy of reaction, entropy of reaction and absolute temperature. As stated previously, both the enthalpy and entropy of reaction regardless of temperature, only changes if the reactants were changed. Hence, the absolute temperature was chosen to be the independent variable of the investigation. The temperature values tested were 298K, 303K, 308K, 313K and 318K as the use of five different temperatures values increases the reliability of the experimental results. 
+
+\subsection{Dependent Variable}
+The dependent variable of the investigation is the \textbf{\textit{enthalpy of the reaction }}($\ce{kJ/mol}$) which will be measured through the use of a coffee cup calorimeter. Referencing equation \ref{eq:4}, the Gibbs Free Energy can be calculated if the enthalpy and entropy of reaction are known as the temperature is the independent variable of the investigation. Only the enthalpy reaction can be directly measured experimentally, and hence was chosen for the purpose of this investigation. The entropy of reaction will be calculated using the equation \ref{eq:2} using the theoretical values provided in the IBO data-booklet. It is important to note that the enthalpy values will be measured in units of ($\ce{kJ/g}$, however, the units will be converted to ($\ce{kJ/mol}$) as all of the other calculations will be calculated in terms of moles.
+
+\subsection{Controlled Variables}
+\subsubsection{Coffee Cup Calorimeter}
+The same coffee cup calorimeter must be used for all of the trials as different calorimeters have different insulation, hence different heat loss to environment. This will affect the measured enthalpy of reaction as a calorimeter with greater insulation will measure a larger temperature change, whereas a calorimeter will little to no insulation will measure a small change in temperature.
+
+\subsubsection{Amount of Reactants}
+The amount of reactants must be kept constant between trials. If the volume of water were to be altered, then the same amount of energy will produce a different temperature change. As indicated by equation \ref{eq:6}, the heat transfer is equal to the product between the mass, specific heat capacity and temperature. Therefore, if the mass of water were to increase, then the change in temperature will decrease, and the reverse is true as well where if the mass of the water were to decrease, the temperature change would increase. Furthermore, the number of moles of Ammonium Nitrate must also be kept constant as the enthalpy of reaction is based off the number of moles reacted.
+
+\subsubsection{Temperature of Surroundings}
+The temperature of the surroundings must be kept constant throughout all of the trials as different surrounding temperatures will result in different heat gain/lost to environment. Therefore, the experiment must be conducted in the same area of the lab as even different areas within a room can have different temperature values. The room temperature should be kept constant and this is verified using a classroom thermometer.
+
+\subsubsection{Even Distribution of Temperature within Water}
+The temperature of the water must be even distributed to ensure that the effect of temperature on enthalpy of reaction is accurate. If only certain parts of the water was heated up to the desired temperatures, then the measured data values would be inconclusive.
+
+\section{Experimental Method}
+\subsection{Apparatus}
+\begin{itemize}
+    \item 100.0 g Ammonium Nitrate 
+    \item 750 mL Distilled Water
+    \item Insulated Coffee Cup (with Lid)
+    \item Pasco-Thermometer
+    \item Laptop with Bluetooth Connection
+    \item Scrap Paper
+    \item Stirring Rod
+    \item Electronic Balance 
+    \item Hot Plate
+\end{itemize}
+
+\subsection{Experimental Procedure}
+\begin{enumerate}
+    \item Measure 4.0 g of Ammonium Nitrate in a Paper weighing boat on a two digit electronic balance. 
+    \item Measure 50 mL of water using a 50 mL Graduated Cylinder.
+    \item Heat up the water to 25°C using a Electronic Hot Plate and verify that the temperature was reached using a Pasco-Thermometer.
+    \item Pour the heated water into the coffee cup calorimeter and add the measured Ammonium Nitrate into the coffee cup.
+    \item Immediately close the lid to the coffee cup and insert the Pasco-Thermometer and start recording the temperature changes in the SparkVue software.
+    \item Once the temperature stops decreasing, let the Pasco-Thermometer to continue recording the temperature change for another 10 seconds.
+    \item Repeat steps 1-7 for three trials at 30°C, 35°C, 40°C, 45°C and 50°C.
+\end{enumerate}
+
+\subsection{Risk Assessment}
+\subsubsection{Safety Consideration}
+Ammonium Nitrate is a strong oxidizer and is extremely explosive when exposed to high temperatures. Therefore, to ensure the safety of the experiment, the Ammonium Nitrate was placed in water of maximum temperature of 50°C, over 100°C less than the temperature at which Ammonium Nitrate begins to decompose. 
+\subsubsection{Ethical Consideration}
+There were no ethical considerations taken into account.
+\subsubsection{Environmental Consideration}
+Concentrated Ammonium Nitrate and Water solution should not be disposed within the drain. Therefore, the product solution must be diluted before being poured down the drainage system.
+
+\subsection{Experimental Setup}
+The experimental setup can be demonstrated by the picture below:
+
+\section{Raw Data}
+
+\subsection{Qualitative Observations}
+
+
+\end{document}
