@@ -84,7 +84,7 @@ If the $\Delta G$ value at a given temperature ($\ce{T_i}$), such as under SATP 
 
 \subsection{Calculation of SATP Values}
 To determine the change of the Gibbs Free Energy based on temperature, the Enthalpy and Entropy of reaction under SATP conditions must first be calculated. Conveniently, as the reaction involves dissolving Ammonium Nitrate in water, the enthalpy is given as an Enthalpy of Solution value, which can be found to be $\ce{25.69 kJ/mol}$ in Table 19 of the IB Data-Booklet. The Entropy of reaction can be calculated using equation \ref{eq:10}.
-\begin{tcolorbox}[title=Calculation of Entropy of Reaction under SATP Conditions]
+\begin{tcolorbox}[title=Calculation of Entropy of Reaction under SATP Conditions ($\Delta S^{\theta}$)]
 \begin{equation}
     \begin{split}
         \mathrm{\Delta S} &= \sum{\mathrm{\Delta S_{products}}} - \sum{\mathrm{\Delta S_{reactants}}} \\
@@ -94,12 +94,23 @@ To determine the change of the Gibbs Free Energy based on temperature, the Entha
 \end{equation}
 \end{tcolorbox}
 \noindent
-This can be recognized to be true as the compound is dissolving from a solid compound into dissociated ions, therefore the disorder is increasing and the entropy of reaction is positive.
+The positive Entropy of reaction value calculated can be verified as the reaction involves solid Ammonium Nitrate dissolving to form dissociated ions, which have are more disordered than the solid. Therefore, since the products are more disordered than the reactant, the entropy of reaction will also be positive. \\ \\
+
+From the Enthalpy and Entropy of reaction, the Gibbs Free Energy of reaction can be calculated equation \ref{eq:5}.
+\begin{tcolorbox}[title=Calculation of the Gibbs Free Energy under SATP Conditions ($\Delta G^{\theta}$)]
+\begin{equation}
+    \begin{split}
+        \mathrm{\Delta G^{\theta}} &= \mathrm{\Delta H^{\theta}} - \mathrm{T \Delta S^{\theta}} \\
+        &= 25.69 \mathrm{kJ/mol} - 298.15\mathrm{K} \times 108.7 \mathrm{J/mol K} \\
+        &= -6.72 \mathrm{kJ/mol}
+    \end{split}
+\end{equation}
+\end{tcolorbox}
 
 \subsection{Experimental Methodology}
 This paper investigates the effect of absolute temperature on the Gibbs Free Energy of the reaction by measuring the enthalpy of reaction at various absolute temperature values. The enthalpy of reaction will be measured through the use of a coffee cup calorimeter, which measures the heat flow in a chemical reaction. The calorimeter is simply an insulated container, with the lid to act as the system for the chemical reaction to occur. When the chemical reaction occurs, the heat of the reaction is absorbed by or extracted from the water and the temperature of the water will change. The change in temperature is measured by a thermometer, which will be used to calculate the enthalpy change of the reaction using the heat flow equation as given by equation \ref{eq:6} below.
 \begin{equation}
-\ce{q = mc_p \Delta T} \label{eq:6} 
+\ce{q = mc_{\mathrm{p}} \Delta T} \label{eq:6} 
 \end{equation}
 As the enthalpy of the reaction is negative to the heat absorbed/gained by the water, the reaction enthalpy can be given as the negative of the heat transfer to the water as shown in equation \ref{eq:7}
 \begin{equation}
@@ -109,10 +120,10 @@ Due to the fact that a coffee cup does not have perfect built in insulation, the
 
 \section{Variables}
 \subsection{Independent Variable}
-The independent variable of this investigation is the \textbf{\textit{absolute temperature }}($\ce{K}$). In equation \ref{eq:5}, the three variables that are used to calculate the Gibbs Free Energy of a reaction are the enthalpy of reaction, entropy of reaction and absolute temperature. As stated previously, both the enthalpy and entropy of reaction regardless of temperature, only changes if the reactants were changed. Hence, the absolute temperature was chosen to be the independent variable of the investigation. The temperature values tested were 298K, 303K, 308K, 313K and 318K as the use of five different temperatures values increases the reliability of the experimental results. 
+The independent variable of this investigation is the \textbf{absolute temperature }($\ce{K}$). In equation \ref{eq:5}, the three variables that are used to calculate the Gibbs Free Energy of a reaction are the enthalpy of reaction, entropy of reaction and absolute temperature. As stated previously, both the enthalpy and entropy of reaction regardless of temperature, only changes if the reactants were changed. Hence, the absolute temperature was chosen to be the independent variable of the investigation. The temperature values tested were 298K, 303K, 308K, 313K and 318K as the use of five different temperatures values increases the reliability of the experimental results. 
 
 \subsection{Dependent Variable}
-The dependent variable of the investigation is the \textbf{\textit{enthalpy of the reaction }}($\ce{kJ/mol}$) which will be measured through the use of a coffee cup calorimeter. Referencing equation \ref{eq:4}, the Gibbs Free Energy can be calculated if the enthalpy and entropy of reaction are known as the temperature is the independent variable of the investigation. Only the enthalpy reaction can be directly measured experimentally, and hence was chosen for the purpose of this investigation. The entropy of reaction will be calculated using the equation \ref{eq:2} using the theoretical values provided in the IBO data-booklet. It is important to note that the enthalpy values will be measured in units of ($\ce{kJ/g}$, however, the units will be converted to ($\ce{kJ/mol}$) as all of the other calculations will be calculated in terms of moles.
+The dependent variable of the investigation is the \textbf{enthalpy of the reaction}($\ce{kJ/mol}$) which will be measured through the use of a coffee cup calorimeter. Referencing equation \ref{eq:4}, the Gibbs Free Energy can be calculated if the enthalpy and entropy of reaction are known as the temperature is the independent variable of the investigation. Only the enthalpy reaction can be directly measured experimentally, and hence was chosen for the purpose of this investigation. The entropy of reaction will be calculated using the equation \ref{eq:2} using the theoretical values provided in the IBO data-booklet. It is important to note that the enthalpy values will be measured in units of ($\ce{kJ/g}$, however, the units will be converted to ($\ce{kJ/mol}$) as all of the other calculations will be calculated in terms of moles.
 
 \subsection{Controlled Variables}
 \subsubsection{Coffee Cup Calorimeter}
@@ -130,7 +141,7 @@ The temperature of the water must be even distributed to ensure that the effect 
 \section{Experimental Method}
 \subsection{Apparatus}
 \begin{itemize}
-    \item 150.0 g Ammonium Nitrate 
+    \item 165.0 g Ammonium Nitrate 
     \item 750 mL Distilled Water
     \item Insulated Coffee Cup (with Lid)
     \item Pasco-Thermometer
@@ -143,7 +154,7 @@ The temperature of the water must be even distributed to ensure that the effect 
 
 \subsection{Experimental Procedure}
 \begin{enumerate}
-    \item Measure 10.0 g of Ammonium Nitrate in a Paper weighing boat on a two digit electronic balance. 
+    \item Measure 11.0 g of Ammonium Nitrate in a Paper weighing boat on a two digit electronic balance. 
     \item Measure 50 mL of water using a 50 mL Graduated Cylinder.
     \item Heat up the water to 25°C using a Electronic Hot Plate and verify that the temperature was reached using a Pasco-Thermometer.
     \item Pour the heated water into the coffee cup calorimeter and add the measured Ammonium Nitrate into the coffee cup.
@@ -178,7 +189,7 @@ The data processing procedure is demonstrated below through the use of a sample 
 \begin{center}
 \begin{tabular}{ |c|c| } 
  \hline
- $\ce{Time}($\mathrm{s}$)(\pm 0.1\mathrm{s})$ & $\ce{Temperature}(\mathrm{K})(\pm 0.01\mathrm{K})$  \\ 
+ $\ce{Time}($\mathrm{s}$)(\pm 0.1\mathrm{s})$ & $\ce{Temperature}(\mathrm{K})(\pm 0.01 \mathrm{K})$  \\ 
  \hline
  0 & 303.53  \\ 
  2 & 302.59  \\ 
@@ -260,8 +271,8 @@ In this investigation, $\ce{10.0 \pm 0.1 g}$ of Ammonium Nitrate is reacted in e
 \begin{split}
   \ce{
   \Delta H_{Theoretical} &= \frac{Mass of Reactant}{Molar Mass of NH4NO3} \times Enthalpy of Reaction \\
-  &= \frac{10.0 g \pm 1.0\%}{80.06 g/mol} \times} \ce{25.69 kJ/mol \\
-  &= 3.21 kJ/mol \pm} \ce{1.0\% g
+  &= \frac{11.0 g \pm 1.0\%}{80.06 g/mol} \times} \ce{25.69 kJ/mol \\
+  &= 3.53 kJ/mol \pm} \ce{1.0\% g
   }  
 \end{split}
 \end{equation}
@@ -272,8 +283,8 @@ The theoretical enthalpy of reaction is $\ce{3.21 kJ \pm 1.0\%}$, which is fairl
 \begin{equation}
     \begin{split}
         \ce{
-        \Delta H_{Molar} &= 3.6 kJ \div \frac{10.0 g \pm 1\%}{80.06 g/mol} \\ 
-        &= 28.8 kJ/mol \pm 2.3\%
+        \Delta H_{Molar} &= 3.6 kJ \div \frac{11.0 g \pm 1\%}{80.06 g/mol} \\ 
+        &= 26.2 kJ/mol \pm 2.3\%
         }
     \end{split}
 \end{equation}
@@ -285,8 +296,8 @@ To calculate the theoretical entropy value, equation \ref{eq:2} where the change
     \begin{split}
         \ce{ 
         \Delta S_{Change} &= nC_p \ln \frac{T_{final}}{T_{Initial}} \\
-        &= \frac{10.0 g \pm 1.0\%}{80.06 g/mol} \times} \ce{139.30 J/mol K \times \ln \frac{303K}{298.15K} \\
-        &= 0.28 J/mol k \pm 1.0\%
+        &= \frac{11.0 g \pm 1.0\%}{80.06 g/mol} \times} \ce{139.30 J/mol K \times \ln \frac{303K}{298.15K} \\
+        &= 0.31 J/mol k \pm 1.0\%
         }
     \end{split}
 \end{equation}
@@ -300,8 +311,8 @@ Therefore, to calculate the entropy of reaction at $\ce{303K}$, the change in en
     \begin{split}
         \ce{
         \Delta S_{T_{final}} &= \Delta S_{T_{Initial}} + \Delta S_{Change} \\
-        &= 260 J/mol K + 0.28 J/mol K \pm 1.0\% \\
-        &= 260.28 J/mol K \pm 1.0\%
+        &= 108.7 J/mol K + 0.31 J/mol K \pm 1.0\% \\
+        &= 109.1 J/mol K \pm 1.0\%
         }
     \end{split}
 \end{equation}
@@ -315,8 +326,8 @@ After both the enthalpy and entropy has been determined, the Gibbs Free Energy o
     \begin{split}
         \ce{
         \Delta G_{T_{final}} &= \Delta H_{T_{final}} - T_{final} \Delta S_{T_{final}} \\
-        &= 28.8 kJ/mol \pm 2.3\% - 303K \times} \ce{260.28 J/mol K \pm 1.0\% \\ 
-        &= -50.06 kJ \pm 2.3\%
+        &= 26.2 kJ/mol \pm 2.3\% - 303K \times} \ce{109.01 J/mol K \pm 1.0\% \\ 
+        &= -6.83 \mathrm{kJ} \pm 2.3\%
         }
     \end{split}
 \end{equation}
@@ -338,17 +349,27 @@ The experimental values can be compared with the literature values through the u
 \end{equation}
 \end{tcolorbox}
 \noindent
-From the theoretical Gibbs Free Energy change value, the theoretical Entropy of reaction at $\mathrm{303K}$ can be determined.
+From the theoretical Gibbs Free Energy change value, the Gibbs Free Energy of the reaction at $\mathrm{303K}$ can be determined to be the sum of the literature value at $\mathrm{298.15K}$ an the Gibbs Free Energy change value.
 \begin{tcolorbox}[title=Calculation of Theoretical Gibbs Free Energy at $\mathrm{303K}$]
 \begin{equation}
     \begin{split}
-        \mathrm{
-        \Delta G_{303K} &= \Delta G_{Literature} + \Delta G_{Change} \\
-        &= 
-        }
+        \mathrm{\Delta G_{303K}} &= \mathrm{\Delta G_{Literature}} + \mathrm{\Delta G_{Change}} \\ 
+        &= -6.72 \mathrm{kJ/mol} + (-0.64 \mathrm{kJ/mol}) \\
+        &= -7.36 \mathrm{kJ/mol}
     \end{split}
 \end{equation}
 \end{tcolorbox}
+The percentage error of this investigation is given by the following formula.
+\begin{tcolorbox}[title=Calculation of Percentage Error ($\mathrm{\% Error}$)]
+\begin{equation}
+    \begin{split}
+    \% Error &= \frac{\mathrm{|\Experimental - Theoretical|}}{\mathrm{\Theoretical}} \times 100 \% \\
+    &= \frac{|-6.83 \mathrm{kJ/mol} - (-7.36 \mathrm{kJ/mol}|}{|-7.36 \mathrm{kJ/mol}|} \times 100 \% \\
+    &= 7.2 \%
+    \end{split}
+\end{equation}
+\end{tcolorbox}
+
 \subsection{Processed Data}
 
 \subsection{Evaluation of Data}
